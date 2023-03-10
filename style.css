@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background-color:#222;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    display:flex;
+}
+
+.ligne{
+    width:4px;
+    height:40px;
+    background-color: white;
+    margin:0 4px;
+    animation-name:ligneQuiMontentEtDescendent;
+    animation-duration:0.7s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes ligneQuiMontentEtDescendent{
+    0%{
+        transform:scale(0);
+    }
+
+    50%{
+        transform:scale(1);
+    }
+
+    100%{
+        transform:scale(0);
+    }
+
+}
+
+.ligne:nth-child(1){
+    animation-delay:0.1s;
+}
+
+.ligne:nth-child(2){
+    animation-delay:0.2s;
+}
+
+
+.ligne:nth-child(3){
+    animation-delay:0.3s;
+}
+
+.ligne:nth-child(4){
+    animation-delay:0.4s;
+}
+
+.ligne:nth-child(5){
+    animation-delay:0.5s;
+}
+
+.ligne:nth-child(6){
+    animation-delay:0.6s;
+}
+
+.ligne:nth-child(7){
+    animation-delay:0.7s;
+}
